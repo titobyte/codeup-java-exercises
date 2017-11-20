@@ -13,7 +13,7 @@ public class Bob {
 
         }   else if (bobResponse.endsWith("!")){
             System.out.println("Whoa chill out!");
-        }   else if (bobResponse.equals("")){
+        }   else if (bobResponse.isEmpty()){
             System.out.println("Fine. Be that way!");
         }   else  {
             System.out.println("Whatever");
