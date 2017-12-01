@@ -1,5 +1,4 @@
 package grades;
-import java.util.Scanner;
 import java.util.HashMap;
 
 public class GradesApplication {
@@ -30,6 +29,7 @@ public class GradesApplication {
 
 
         displayMenu(students);
+        studentInfo(students);
 
     }
     public static void displayMenu(HashMap<String, Student> students){
@@ -37,8 +37,15 @@ public class GradesApplication {
         System.out.println("Welcome!");
         System.out.println("Here are the github usernames of our students:");
         for (String key : students.keySet()){
-            System.out.println(key);
+            System.out.print(" | "+ key + " | ");
         }
+
+    }
+    public static void studentInfo(HashMap<String, Student> students){
+        System.out.println();
+        System.out.println("What student would you like to see more information on?");
+
+
     }
 
 
